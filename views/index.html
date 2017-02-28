@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge"/>
     <title>缘天金服,苏州本土金融平台，本着普惠金融，服务姑苏的理念为您提供安全、高效的互联网理财服务-www.chinaytjf.com</title>
-    <link href="public/css/common.css" rel="stylesheet"/>
-    <link href="public/css/index.css" rel="stylesheet"/>
-    <link href="public/css/font/font-style.css" rel="stylesheet"/>
+    <link href="./public/css/common.css" rel="stylesheet"/>
+    <link href="./public/css/index.css" rel="stylesheet"/>
+    <link href="./public/css/font/font-style.css" rel="stylesheet"/>
+    <link href="./public/css/swiper-3.4.1.min.css" rel="stylesheet" />
+    <!--[if gte IE 8]>
+    <link href="./public/css/idangerous.swiper.css" rel="stylesheet" />
+    <style type="text/css">
+        .swiper-pagination {
+            position: absolute;
+            z-index: 20;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .swiper-pagination-switch {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 8px;
+            background: #555;
+            margin: 0 5px;
+            opacity: 0.8;
+            border: 1px solid #fff;
+            cursor: pointer;
+        }
+        .swiper-active-switch {
+            background: #fff;
+        }
+    </style>
+    <![endif]-->
 </head>
 <body>
 <div class="header">
@@ -38,7 +65,7 @@
                 </a>
                 <a class="a">
                     <span class="iconfont icon-xiazai"></span>下载app
-                    <img src="public/img/ercode.png" class="response-img-width hidden"/>
+                    <img src="./public/img/ercode.png" class="response-img-width hidden"/>
                 </a>
                 <a class="a">
                     <span class="iconfont icon-weixingongzhonghao"></span>微信公众号</a>
@@ -51,16 +78,18 @@
     <div class="header-content background-fff clear-both">
         <div class="nav container">
             <div class="logo">
-                <img src="public/img/76fd0bec.logo.png" class="logo-image response-img-height">
+                <img src="./public/img/76fd0bec.logo.png" class="logo-image response-img-height">
             </div>
             <ul class="nav-content clear-both">
-                <li>首页</li>
-                <li>我要理财</li>
-                <li>安全保障</li>
-                <li>关于我们</li>
+                <li><a>首页</a></li>
+                <li><a>我要理财</a></li>
+                <li><a>安全保障</a></li>
+                <li><a>关于我们</a></li>
                 <li>
-                    <span class="iconfont icon-login"></span>
-                    <a class="my-account">我的账户</a>
+                    <a>
+                        <span class="iconfont icon-login"></span>
+                        <span class="my-account">我的账户</span>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -68,7 +97,28 @@
 </div>
 <div class="banner">
     <!--<div style="background-image: url('./public/img/ptop.jpg')" class="image"></div>-->
-    <div style="background-image: url('./public/img/report.jpg')" class="image"></div>
+    <div class="swiper-container image">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-no-swiping swiper-image"
+                 style="background-image: url('./public/img/lucky.jpg')">
+                <!--<img src="public/img/lucky.jpg" class="response-img-width" />-->
+            </div>
+            <div class="swiper-slide swiper-no-swiping swiper-image"
+                 style="background-image: url('./public/img/app.jpg')">
+                <!--<img src="public/img/app.jpg" class="response-img-width" />-->
+            </div>
+            <div class="swiper-slide swiper-no-swiping swiper-image"
+                 style="background-image: url('./public/img/ptop.jpg')">
+                <!--<img src="public/img/ptop.jpg" class="response-img-width" />-->
+            </div>
+            <div class="swiper-slide swiper-no-swiping swiper-image"
+                 style="background-image: url('./public/img/report.jpg')">
+                <!--<img src="public/img/ptop.jpg" class="response-img-width" />-->
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination swiper-button"></div>
+<!--    <div style="background-image: url('./public/img/report.jpg')" class="image"></div>-->
     <div class="container">
         <div class="login">
             <div class="intro">预期年化收益</div>
@@ -532,5 +582,33 @@
         </ul>
     </div>
 </div>
+
+<script src="public/js/min/jquery-1.10.1.min.js"></script>
+<!--[if gte IE 8]>
+<script src="public/js/min/idangerous.swiper.min.js"></script>
+<script>
+    var mySwiper;
+    mySwiper = new Swiper('.swiper-container',{
+        pagination : '.swiper-pagination',
+        paginationClickable :true,
+        autoplay : 2000,//可选选项，自动滑动
+        loop : true//可选选项，开启循环
+    });
+    window.mySwiper = mySwiper;
+</script>
+<![endif]-->
+<script src="public/js/min/swiper-3.4.1.jquery.min.js"></script>
+<script>
+    console.log(typeof window.mySwiper);
+    if(typeof window.mySwiper !== "object"){
+        mySwiper = new Swiper('.swiper-container',{
+            pagination : '.swiper-pagination',
+            effect : 'fade',
+            paginationClickable :true,
+            autoplay : 2000,//可选选项，自动滑动
+            loop : true//可选选项，开启循环
+        });
+    }
+</script>
 </body>
 </html>

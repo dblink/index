@@ -56,6 +56,12 @@ body{
     height: 60px;
     line-height: 60px;
 }
+.nav-content li a{
+    display: block;
+}
+.nav-content li:hover{
+    background: #ededed;
+}
 .nav-content li .iconfont{
     font-size: 22px;
     color: #C18F48;
@@ -396,4 +402,15 @@ body{
 }
 .cooperation img:hover {
     background: #f9f9f9;
+}
+.swiper-button{
+    width: 100%;
+    bottom: 5%;
+}
+.swiper-button span{
+    margin-left: 8px;
+}
+.swiper-image{
+    background: center center no-repeat;
+    background-size: auto 100%;
 }
