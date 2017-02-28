@@ -1,0 +1,399 @@
+body{
+}
+.container{
+    position: relative;
+    width: 1100px;
+    margin: auto;
+}
+.logo{
+    float: left;
+    padding: 10px 0;
+    height: 50px;
+    *width: 325px;
+}
+.header-top{
+    padding: 10px 0;
+    font-size: 12px;
+    color: #999;
+}
+.header-top a{
+   /* border-left: #666 solid 1px;*/
+    padding-left:10px;
+    color: #999;
+    position: relative;
+}
+.header-top .iconfont{
+    font-size: 22px;
+    vertical-align: sub;
+    color: #C18F48;
+}
+.header-top .right{
+    padding-right: 5px;
+}
+.header-top a:hover{
+    color: #DDBE91;
+}
+.header-top a img{
+    visibility: inherit;
+    position: absolute;
+    left: 0;
+    *top: 20px;
+    width: 200%;
+    z-index: 1;
+}
+.header-top a:hover img{
+    display: block!important;
+}
+.nav-content{
+    float: right;
+    width: 600px;
+}
+.nav-content li{
+    float: left;
+    width: 20%;
+    padding: 5px 0;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+.nav-content li .iconfont{
+    font-size: 22px;
+    color: #C18F48;
+}
+.nav-content li .iconfont,
+.nav-content li .my-account{
+    vertical-align: top;
+}
+.banner{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+}
+.banner .image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: center center no-repeat;
+    background-size: auto 100%;
+    z-index: -1;
+}
+.banner .login{
+    position: absolute;
+    right: 10px;
+    top: 75px;
+    height: 250px;
+    padding: 15px 0;
+    width: 250px;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+    *background: #ededed;
+    color: #fff;
+}
+.newPeople .login{
+    height: 250px;
+    padding: 25px 0;
+    color: #fff;
+    background: #ff5b67;
+}
+.product .login{
+    height: 250px;
+    padding: 25px 0;
+    color: #fff;
+    background: #62b6ff;//ffd016
+}
+.creditor .login{
+    height: 250px;
+    padding: 25px 0;
+    color: #fff;
+    background: #ff8819;
+}
+.login .intro{
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    margin: auto;
+}
+.login .info{
+    text-align: center;
+    font-size: 40px;
+    height: 120px;
+    line-height: 120px;
+    margin: auto;
+    *color: #C18F48;
+}
+.login .button{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px auto;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background: #C18F48;
+}
+.login .tip{
+    font-size: 12px;
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    margin: auto;
+    text-align: center;
+}
+.login .bubble{
+    font-size: 14px;
+    text-align: center;
+    height: 100px;
+    line-height: 50px;
+    /*color: #fff;*/
+}
+.login .bubble .iconfont{
+    font-size: 24px;
+    vertical-align: sub;
+    padding-right: 5px;
+}
+.statistic li{
+    float: left;
+    width: 20%;
+    padding: 20px 0;
+    height: 44px;
+    font-size: 14px;
+    word-break: break-all;
+}
+.statistic .iconfont{
+    font-size: 42px;
+    color: lightblue;
+}
+.statistic .word{
+    display: inline-block;
+    line-height: 22px;
+}
+.statistic .del{
+    height: 44px;
+    line-height: 44px;
+    border-left: 1px solid #ededed;
+    text-align: center;
+}
+.main-color{
+    color: #C18F48;
+}
+.iconfont{
+    *display: none;
+}
+.notice-title{
+    padding: 20px;
+}
+.notice-title > a{
+    font-size: 14px;
+}
+.notice-content{
+    padding: 0 35px;
+}
+.notice-content li{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.question{
+    border-left: 1px dashed #ededed;
+}
+.question li{
+    font-size: 14px;
+    margin-top: 10px;
+    text-indent: 25px;
+}
+.question-title{
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: 1px dashed #ededed;
+}
+.product,
+.creditor,
+.newPeople{
+    height: 300px;
+    background: #fff;
+    margin-top: 30px;
+    position: relative;
+}
+.newPeople-title{
+    padding: 20px;
+}
+.newPeople-title .tip{
+    color: #EA533F;
+    font-size: 12px;
+}
+.newPeople-title a{
+    font-size: 14px;
+}
+.newPeople-content{
+    height: 239px;
+    line-height: 239px;
+}
+.newPeople .year-get{
+    display: inline-block;
+    *padding-top: 70px;
+}
+.newPeople .year-get .rate{
+    font-size: 40px;
+    color: #EA533F;
+}
+.newPeople .year-get p{
+    line-height: normal;
+    font-size: 14px;
+}
+.product-common .bar,
+.creditor-common .bar,
+.newPeople-content .bar{
+    position: relative;
+    text-align: center;
+}
+.product-common .progress,
+.creditor-common .progress,
+.newPeople-content .progress{
+    background: #ededed;
+    display: inline-block;
+    height: 5px;
+    width: 200px;
+    border-radius: 2px;
+    text-align: left;
+    vertical-align: middle;
+}
+.product-common .progress .percent,
+.creditor-common .progress .percent,
+.newPeople-content .progress .percent{
+    display: block;
+    height: 5px;
+    width: 100px;
+    border-radius: 2px;
+}
+.newPeople-content .progress .percent{
+    background: #EA533F;
+}
+.newPeople-content .button{
+    padding: 7px 20px;
+    border-radius: 5px;
+    background: #f04447;
+    *background: #fff;
+    color: #fff;
+    *color: #333;
+    font-size: 14px;
+}
+
+.newPeople-content .button:hover{
+    background: #EA533F;
+}
+
+.product .title{
+    font-size: 14px;
+    padding: 5px;
+}
+.creditor .more,
+.product .more{
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-size: 14px;
+}
+.product .product-common .info{
+    height: 270px;
+    line-height: 270px;
+    text-align: center;
+}
+.creditor-common,
+.product-common{
+    border-right: 1px dashed #ededed;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 100%;
+}
+.creditor-common .button,
+.product-common .button{
+    position: absolute;
+    bottom: -20%;
+    width: 100%;
+    text-align: center;
+    transition: .5s bottom;
+    line-height: normal;
+}
+.product-common .button a{
+    color: #333;
+}
+.creditor-common:hover,
+.product-common:hover{
+    background: #f9f9f9;
+}
+.creditor-common:hover .button,
+.product-common:hover .button{
+    bottom: 10%;
+}
+
+.product-common .info-content{
+    display: inline-block;
+    text-align: center;
+}
+.product-common .info-content .rate{
+    font-size: 35px;
+    color: #62b6ff;
+}
+.product-common .info-content p{
+    line-height: normal;
+    font-size: 14px;
+}
+.creditor-common .progress,
+.product-common .progress{
+    width: 150px;
+}
+.creditor-common .percent,
+.product-common .percent{
+    width: 75px;
+}
+.product-common .percent{
+    background: #62b6ff;
+}
+.small{
+    font-size: 14px;
+}
+.creditor-common .creditor-content{
+    display: inline-block;
+    vertical-align: middle;
+}
+.creditor-common{
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+}
+.creditor-common .creditor-content > div{
+    line-height: normal;
+}
+.creditor-common .bar{
+    line-height: normal;
+}
+.creditor-common .info{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.creditor-content .rate{
+    color: #ff8819;
+}
+.creditor-common .percent{
+    background: #ff8819;
+}
+.cooperation{
+    background: #fff;
+    margin-top: 30px;
+}
+.cooperation p{
+    padding: 10px;
+}
+.cooperation img{
+    border: none;
+}
+.cooperation p{
+    border-bottom: 1px dashed #ededed;
+}
+.cooperation img:hover {
+    background: #f9f9f9;
+}
